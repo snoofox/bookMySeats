@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: process.env.FRONTEND_URL
 }))
 
 app.use(express.json());
@@ -24,5 +24,5 @@ app.use("/seats", seatsRoutes)
 
 app.listen(port, async () => {
     await initDB();
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at ${port}`);
 });
