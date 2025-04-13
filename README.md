@@ -12,7 +12,6 @@ This application simulates a train coach with 80 seats (11 rows of 7, 1 row of 3
 - Visual seat map displaying available and booked seats.
 - Seat booking functionality (1-7 seats per booking).
 - Prioritized booking logic (same row > nearby seats).
-- View personal booking history.
 - Responsive design using Tailwind CSS and Shadcn UI.
 
 ## Tech Stack
@@ -38,7 +37,7 @@ Follow these steps to get the project running locally:
 **1. Clone the Repository:**
 
 ```bash
-git https://github.com/snoofox/bookMySeats
+git clone https://github.com/snoofox/bookMySeats
 cd bookMySeats
 ```
 
